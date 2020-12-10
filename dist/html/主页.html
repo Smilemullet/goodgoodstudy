@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<link rel="stylesheet" href="../css/主页.css">
+<link rel="stylesheet" href="../iconfont/iconfont.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/axios.min.js"></script>
+
+
+
+
+
+<body>
+
+    <header>
+        <div id="top-nav">
+            <div id="city">
+                <span>北京市</span>
+                <i id="jianjiao"></i>
+            </div>
+            <ul id="list">
+
+                <li><a href="登录页面.html">请登录 </a>/</li>
+                <li><a href="注册页面.html">注册</a> /</li>
+                <li>
+                    <img src="https://shop.vipstatic.com/img/common/header_sign-hash-0459d02c.gif?dd7841df" alt="">
+                    <a href="">签到有礼</a> /
+                </li>
+                <li> <a href="">我的订单 </a>/</li>
+
+                <li><a href="">我的特卖 <i></i></a>/</li>
+
+                <li><a href="">会员俱乐部 <i></i></a>/</li>
+                <li>
+                    <a href="">客户服务<i></i></a>/
+                </li>
+                <li>
+                    <span class="iconfont icon-shouji"></span><a href="">手机端 </a>/</li>
+                <li><a href="">更多<i></i></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <div id="header-two">
+        <div id="serch-input">
+            <div>
+                <a href="" id="img"><img src="../image/1606788668663.gif" alt=""></a>
+            </div>
+
+            <div>
+                <a href="" id="aa"><span class="iconfont icon-zhengpin"></span>%正品</a>
+            </div>
+            <div> <a href="" id="aaa"><span class="iconfont icon-man88baoyou"></span>
+                88元免邮</a></div>
+            <div>
+                <a href="" id="aaaa"><span class="iconfont icon-tianwuliyoutuihuo"></span>退换无忧</a>
+            </div>
+
+            <input type="text" placeholder="女鞋" id="big-input"><span id="small-input">搜索</span>
+            <div id="four-a">
+                <a href="">店庆福利 两件9折 |</a>
+                <a href="">真便宜 不用比 |</a>
+                <a href="">3折封顶 大牌让利 |</a>
+                <a href="">爆款羽绒 超低价</a>
+            </div>
+            <a href="购物车页面.html">
+                <div id="gwd">
+                    <span class="iconfont icon-gouwudai1"></span>
+                    <a href="" id="d-aa">购物袋</a>
+                    <a href="" id="number">0</a>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div id="list-ul">
+
+        <ul>
+            <li id="one-li"><span class="iconfont icon-santiaogang"></span> 商品分类 </li>
+            <li id="two-li">
+                <strong>店庆特卖</strong></li>
+            <li>3折疯抢</li>
+            <li>唯品快枪</li>
+            <li>唯品奥莱</li>
+            <li>品牌清仓</li>
+            <li>女装</li>
+            <li>母婴</li>
+            <li>家电</li>
+            <li>美妆</li>
+            <li>鞋包</li>
+            <li>更多</li>
+        </ul>
+    </div>
+    <div id="bb-box">
+
+        <!-- banner -->
+        <div id="banner"></div>
+        <!-- banner-two -->
+        <div id="banner-two"></div>
+
+        <!-- 左侧边栏 -->
+        <div id="left-list">
+            <div id="list-image"><img src="../image/ae9902cddd6e9386d813c1a1e07cf473.png" alt=""></div>
+            <ul id="left-ul">
+                <li>店庆新货 > </li>
+                <li>唯品块抢 > </li>
+                <li>御寒保暖 > </li>
+                <li>3折封顶 > </li>
+                <li>店庆TOP榜 > </li>
+            </ul>
+            <ul id="left-ul-two">
+                <li>时尚女装</li>
+                <li>美妆个护</li>
+                <li>母婴男装</li>
+                <li>运动户外</li>
+                <li>暖心内衣</li>
+                <li>钜惠男装</li>
+                <li>百搭鞋靴</li>
+                <li>潮流箱包</li>
+                <li>数码家电</li>
+                <li>手表配饰</li>
+                <li>居家家纺</li>
+                <li>母婴用品</li>
+                <li>营养食品</li>
+                <li>日用百货</li>
+            </ul>
+            <div id="TOP">TOP<span class="iconfont icon-arrow_down"></span></div>
+
+
+        </div>
+        <!-- 右侧边栏 -->
+        <div id="right-list">
+            <ul id=right-ul>
+                <li id="rr-one"><span class="iconfont icon-ren"></span>
+                    <p>账号</p>
+                </li>
+                <li id="rr-two">
+                    <span class="iconfont icon-shouji"></span>
+                    <p>购</p>
+                    <p>物</p>
+                    <p>袋</p>
+                    <div id="yuan">0</div>
+                </li>
+                <li id="rr-three"><span class="iconfont icon-youhuijuan"></span></li>
+                <li id="rr-four"><span class="iconfont icon-xinaixin"></span></li>
+                <li id="rr-five"><span class="iconfont icon--star-o"></span></li>
+                <li id="rr-six"><span class="iconfont icon-clockwise-up"></span></li>
+                <li id="rr-seven"><span class="iconfont icon-qianbi"></span></li>
+                <li id="rr-eight"><span class="iconfont icon-arrow_down"></span></li>
+            </ul>
+        </div>
+        <!-- banner-three -->
+        <div id="banner-three">
+            <img src="../image/banner3.png" alt="">
+        </div>
+        <!-- banner-four -->
+        <div id="banner-four">
+            <img src="../image/banner4.png" alt="">
+        </div>
+        <div id="banner-five">
+            <div id="title-all"><img src="../image/qw.jpg" alt="">
+            </div>
+            <div id="title-all-pictures">
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+                <div>
+                    <img src="../image/yy.webp" alt="">
+                    <p>女鞋</p>
+                </div>
+            </div>
+        </div>
+        <div id="woman-clothes">
+            <div id="fashion-woman"><img src="../image/qe.jpg" alt=""></div>
+            <div id="number-four">
+                <div id="number-number">
+                    <span>精选品牌</span>
+                    <span>专柜大牌</span>
+                    <span>潮流时尚</span>
+                    <span>国际大牌</span>
+                </div>
+
+
+
+            </div>
+            <div id="clothes-picture">
+                <div id="ssss">
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>id
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+                <div>
+                    <img src="../image/hh.webp" alt="">
+                    <p id="clothes-p1">rosel女装-年终店庆专卖场</p>
+                    <p id="clothes-p2">3折封顶</p>
+                    <button id="clothes-button">立即抢购</button>
+                </div>
+
+
+            </div>
+            <div id="more">点击加载更多</div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div id=footer-one>
+            <img src="../image/qr.jpg" alt="">
+        </div>
+        <div id="footer-two">
+            <div id="fone-div">
+                <p>服务保障</p>
+                <ul>
+                    <li>正品保证</li>
+                    <li>七天无理由放心退</li>
+                    <li>7x15小时客服服务</li>
+                    <li>7天无理由随心换</li>
+                </ul>
+
+            </div>
+            <div id="ftwo-div">
+                <p>服务保障</p>
+                <ul>
+                    <li>正品保证</li>
+                    <li>七天无理由放心退</li>
+                    <li>7x15小时客服服务</li>
+                    <li>7天无理由随心换</li>
+                </ul>
+
+            </div>
+            <div id="fthree-div">
+                <p>服务保障</p>
+                <ul>
+                    <li>正品保证</li>
+                    <li>七天无理由放心退</li>
+                    <li>7x15小时客服服务</li>
+                    <li>7天无理由随心换</li>
+                </ul>
+
+            </div>
+            <div id="ffour-div">
+                <p>服务保障</p>
+                <ul>
+                    <li>正品保证</li>
+                    <li>七天无理由放心退</li>
+                    <li>7x15小时客服服务</li>
+                    <li>7天无理由随心换</li>
+                </ul>
+
+            </div>
+            <div id="ffive-div">
+                <p>服务保障</p>
+                <ul>
+                    <li>正品保证</li>
+                    <li>七天无理由放心退</li>
+                    <li>7x15小时客服服务</li>
+                    <li>7天无理由随心换</li>
+                </ul>
+
+            </div>
+            <div id="fsix-div">
+                <p>唯品会app二维码</p>
+                <img src="../image/ewm.png" alt="">
+                <p>下载唯品会移动app</p>
+            </div>
+
+
+
+        </div>
+        <div id="footer-three">
+            <ul>
+                <li>关于我们|</li>
+                <li>About us|</li>
+                <li>Investor Relations|</li>
+                <li>媒体报道|</li>
+                <li>品牌招商|</li>
+                <li>隐私条款|</li>
+                <li>唯品诚聘|</li>
+                <li>唯品卡|</li>
+                <li>联系我们|</li>
+                <li>廉政举报|</li>
+            </ul>
+        </div>
+        <div id="footer-four">
+            <p id="footer-four-p1">Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受 唯品会用户协议。版权所有 广州唯品会电子商务有限公司</p>
+            <p id="footer-four-p3">粤公网安备 44010302111111号 粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2018〕5030-1743号</p>
+            <p>经营主体证照 风险监测信息 互联网药品信息服务资格证书：（粤）-经营性-2018-0271 网络食品交易第三方平台备案凭证：粤B2-20170777 医疗器械网络交易服务第三方平台备案</p>
+            <p id="footer-four-p4">凭证：（粤）网械平台备字[2019]第00001号</p>
+        </div>
+        <div id="footer-five">
+            <img src="../image/sss.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+    <!--  <script>
+        let pagenum = 1;
+        let pagesize = 20;
+        let url = 'http://jx.xuzhixiang.top/ap/api/allproductlist.php'
+        let uid = localStorage.getItem('uid')
+        let token = localStorage.getItem('token')
+
+        axios.get(url).then(res).then(res => {
+            console.log(res.data);
+        })
+    </script> -->
+
+    <script src="../js/shouye.js"></script>
+
+</body>
+
+</html>
+
+</html>

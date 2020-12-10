@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/axios.min.js"></script>
+</head>
+
+<body>
+    <ul class="list">
+        <li>
+            <p></p>
+            <p></p>
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+        </li>
+    </ul>
+    <script>
+        let pagenum = 0;
+        let pagesize = 20;
+        let url = 'http://jx.xuzhixiang.top/ap/api/allproductlist.php'
+        let uid = localStorage.getItem('uid')
+        let token = localStorage.getItem('token')
+
+        axios.get(url, {
+            params: {
+                pagenum,
+                pagesize,
+                uid
+            }
+        }).then(res => {
+            console.log(res.data);
+            //商品数组
+            let arr = res.data.data;
+
+            let html = '';
+            arr.forEach(obj => {
+                html += `<li>
+            <p>${obj.pname}</p>
+            <p>${obj.pid}</p>
+            <img src="${obj.pim}" alt="">
+            <p>${obj.pdesc}</p>
+            <p>${obj.pprice}</p>
+        </li>`
+
+
+            });
+            let list = document.querySelector('.list')
+            list.innerHTML = html;
+
+        })
+    </script>
+</body>
+
+</html>

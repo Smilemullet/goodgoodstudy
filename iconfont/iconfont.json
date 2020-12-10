@@ -1,0 +1,114 @@
+{
+  "id": "2249097",
+  "name": "唯品会",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6558",
+      "name": "满88包邮",
+      "font_class": "man88baoyou",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9271937",
+      "name": "7",
+      "font_class": "tianwuliyoutuihuo",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "13186147",
+      "name": "正品",
+      "font_class": "zhengpin",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "14928156",
+      "name": "三条杠",
+      "font_class": "santiaogang",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "444222",
+      "name": "购物袋",
+      "font_class": "gouwudai1",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "1848293",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1862439",
+      "name": "铅笔",
+      "font_class": "qianbi",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "3565009",
+      "name": "人",
+      "font_class": "ren",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "6424582",
+      "name": "时针上",
+      "font_class": "clockwise-up",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "7561550",
+      "name": "优惠卷",
+      "font_class": "youhuijuan",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "7872529",
+      "name": "心 爱心",
+      "font_class": "xinaixin",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "13725203",
+      "name": "五角星",
+      "font_class": "-star-o",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "15970531",
+      "name": "尖角号",
+      "font_class": "arrow_down",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "17295476",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "8230984",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    }
+  ]
+}

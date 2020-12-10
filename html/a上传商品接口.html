@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="send">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="button">
+    </div>
+    <script>
+        let ipts = document.querySelectorAll('#send input')
+        ipts[4].onclick = function() {
+            let pname = ipts[0].value;
+            let pprice = ipts[1].value;
+            let pimg = ipts[2].value;
+            let pdesc = ipts[3].value;
+            let uid = localStorage.getItem('uid')
+
+            let pAPI = 'http://jx.xuzhixiang.top/ap/api/goods/goods-add.php'
+            axios.get(pAPI, {
+                params: {
+                    pname,
+                    pprice,
+                    de
+                    pimg,
+                    pdesc,
+                    uid
+                }
+            }).then(res => {
+                console.log(res.data)
+            })
+        }
+    </script>
+
+</body>
+
+</html>

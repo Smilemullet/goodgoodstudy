@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/注册页面.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/登录页面.css">
+    <script src="../js/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div id="header-one">
+            <a href="主页.html">
+                <image src="../image/12.8.png"></image>
+            </a>
+            <div></div>
+        </div>
+    </header>
+    <div id="banner">
+        <div id="denglu">
+            <p>账户登录</p>
+            <input type="text" placeholder="手机号" id="text1"><br>
+            <input type="text" placeholder="密码" id="text2"><br>
+            <input type="button" value="登录" id="last-input">
+        </div>
+    </div>
+    <footer>Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329</footer>
+</body>
+<script>
+    let text1 = document.getElementById("text1");
+    let text2 = document.getElementById("text2");
+    let button = document.getElementById("last-input");
+    button.onclick = function() {
+        let username = text1.Value
+        let password = text2.value
+        let regAPI = 'http://jx.xuzhixiang.top/ap/api/login.php'
+
+        axios.get(regAPI, {
+            params: {
+                username: username,
+                password
+            }
+        }).then(function(res) {
+            //请求成功
+            console.log(res);
+            console.log(res.data); //真正的数据
+            alert(res.data.msg)
+                //账号：19911，密码：19911  uid：45229
+                //那个id就是uid
+            if (res.data.code == 1) {
+                // location.href = "主页.html"
+                localStorage.setItem('uid', res.data.data.id)
+                localStorage.setItem('token', res.data.data.token)
+            }
+        }).catch(function(err) {
+            //请求失败
+            console.log(err);
+        })
+
+    }
+</script>
+
+</html>
