@@ -1,0 +1,183 @@
+/* main */
+
+.main-wrap {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.main-wrap main {
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 506px;
+    overflow: hidden;
+}
+
+.main-wrap main .kong {
+    line-height: 506px;
+    font-size: 35px;
+    color: #b0b0b0;
+    text-align: center;
+    font-weight: 900;
+}
+
+.main-wrap main .cart-list {
+    width: 100%;
+    margin-top: 38px;
+}
+
+.main-wrap main .cart-list li {
+    height: 116px;
+    line-height: 116px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.main-wrap main .cart-list li>input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 47px;
+    margin-left: 24px;
+}
+
+.main-wrap main .cart-list li img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 18px 39px 18px 67px;
+}
+
+.main-wrap main .cart-list li .kuang {
+    float: left;
+    width: 148px;
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    line-height: 40px;
+    position: absolute;
+    top: 38px;
+    right: 308px;
+}
+
+.main-wrap main .cart-list li .kuang button {
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    float: left;
+}
+
+.main-wrap main .cart-list li .kuang button:hover {
+    background: #e0e0e0;
+}
+
+.main-wrap main .cart-list li .kuang input {
+    width: 72px;
+    height: 38px;
+    outline: none;
+    border: none;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+
+.main-wrap main .cart-list li .price {
+    position: absolute;
+    left: 655px;
+}
+
+.main-wrap main .cart-list li .pertotalprice {
+    position: absolute;
+    right: 185px;
+    color: #ff6700;
+}
+
+.main-wrap main .cart-list li .delete {
+    position: absolute;
+    right: 60px;
+}
+
+.main-wrap main .cart-list>li:first-child {
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    font-size: 12px;
+    color: #424242;
+}
+
+.main-wrap main .cart-list>li:first-child>input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 25px 15px 0 24px;
+}
+
+.main-wrap main .cart-list>li:first-child span {
+    position: absolute;
+}
+
+.main-wrap main .cart-list>li:first-child span:nth-of-type(1) {
+    left: 230px;
+}
+
+.main-wrap main .cart-list>li:first-child span:nth-of-type(2) {
+    left: 666px;
+}
+
+.main-wrap main .cart-list>li:first-child span:nth-of-type(3) {
+    left: 829px;
+    border: none;
+    line-height: 70px;
+}
+
+.main-wrap main .cart-list>li:first-child span:nth-of-type(4) {
+    right: 188px;
+}
+
+.main-wrap main .cart-list>li:first-child span:nth-of-type(5) {
+    right: 53px;
+}
+
+.main-wrap main .cart-list li:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.main-wrap main .cart-list>li:last-child {
+    height: 50px;
+    border-bottom: none;
+    margin-top: 20px;
+}
+
+.main-wrap main .cart-list .list-footer {
+    line-height: 50px;
+}
+
+.main-wrap main .cart-list .list-footer p {
+    float: left;
+    font-size: 12px;
+    color: #757575;
+    text-indent: 32px;
+}
+
+.main-wrap main .cart-list .list-footer p span {
+    color: #ff6700;
+}
+
+.main-wrap main .cart-list .list-footer p:nth-child(2) {
+    margin-left: 490px;
+}
+
+.main-wrap main .cart-list .list-footer p:nth-child(2) span {
+    font-size: 22px;
+}
+
+.main-wrap main .cart-list .list-footer a {
+    float: right;
+    width: 202px;
+    background: #ff6700;
+    text-align: center;
+    color: white;
+}

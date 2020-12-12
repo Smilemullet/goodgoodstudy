@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/注册页面.css">
+    <link rel="stylesheet" href="../css/购物车.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/gouwuche.js"></script>
 </head>
 
 <body>
@@ -19,6 +22,56 @@
             <div></div>
         </div>
     </header>
+    <!-- main -->
+    <div class="main-wrap">
+        <main>
+            <!-- <h2 class="kong">您的购物车还是空的！</h2> -->
+            <ul class="cart-list">
+                <li class="list-header">
+                    <input type="checkbox" class="checkAll">全选
+                    <span>商品名称</span>
+                    <span>单价</span>
+                    <span>数量</span>
+                    <span>小计</span>
+                    <span>操作</span>
+                </li>
+
+                <ul class="xieru">
+                    <!-- <li>
+                        <input type="checkbox">
+                        <img src="images/lar/milogo.png" alt="">
+                        <span>小米双单元半入耳式耳机Type-C版 黑色</span>
+                        <span class="price">89元</span>
+                        <span class="kuang">
+                            <button class="jian">-</button>
+                            <input type="text" class="txt">
+                            <button class="jia">+</button>
+                        </span>
+                        <span class="pertotalprice">89</span>元
+                        <span class="delete">×</span>
+                    </li> -->
+                </ul>
+
+                <li class="list-footer">
+
+                    <p>
+                        继续购物 | 共
+                        <span class="num1">3</span>件商品， 已选择
+                        <span class="num2">0</span>件
+                    </p>
+                    <p>
+                        合计
+                        <span class="total">
+                            0
+                        </span>元
+                    </p>
+                    <a href="">去结算</a>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+
 </body>
 
 </html>

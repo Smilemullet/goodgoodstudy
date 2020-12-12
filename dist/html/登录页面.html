@@ -36,14 +36,14 @@
     let text2 = document.getElementById("text2");
     let button = document.getElementById("last-input");
     button.onclick = function() {
-        let username = text1.Value
+        let username = text1.value
         let password = text2.value
         let regAPI = 'http://jx.xuzhixiang.top/ap/api/login.php'
 
         axios.get(regAPI, {
             params: {
-                username: username,
-                password
+                password,
+                username
             }
         }).then(function(res) {
             //请求成功
@@ -53,9 +53,9 @@
                 //账号：19911，密码：19911  uid：45229
                 //那个id就是uid
             if (res.data.code == 1) {
-                // location.href = "主页.html"
                 localStorage.setItem('uid', res.data.data.id)
                 localStorage.setItem('token', res.data.data.token)
+                location.href = "主页.html"
             }
         }).catch(function(err) {
             //请求失败
